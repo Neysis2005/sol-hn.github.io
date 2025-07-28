@@ -1019,6 +1019,13 @@ html {
 	.contact-info ul li, .information ul li, .my-account ul li{
 		text-align: left;
 	}
+	.my-account ul{
+		widht: 100%;
+		align-items: flex-start;
+		dislay: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
 
 	.contact-info, .information, .newsletter .my-account {
 		align-items: flex-start;
