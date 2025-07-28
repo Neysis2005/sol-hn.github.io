@@ -491,6 +491,7 @@ html {
 	grid-template-rows: repeat(2, 30rem);
 	gap: 1.5rem;
 	margin-bottom: 3rem;
+	padding: 0 1.5rem;
 }
 
 .gallery img {
@@ -513,6 +514,7 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	padding: 0 1.5rem;
 }
 
 .container-blogs {
@@ -863,18 +865,32 @@ html {
 	}
 
 	.gallery {
+		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 15rem);
+	}
+	.galery-img-3{
+		grid-column: 1 / span 2;
+		grid-row: 2 / span 2;
 	}
 
 	.container-blogs {
-		overflow: hidden;
-		grid-template-columns: 1fr 1fr;
-
-		height: 52rem;
+		
+		grid-template-columns: repeat (auto-fit, minmax(30rem, 1fr));
+		gap: 2rem;
 	}
 
 	.menu-footer {
 		grid-template-columns: repeat(2, 1fr);
+		gap: 2.5rem;
+		justify-items: start;
+		padding: 0 2rem;
+	}
+	.contact-info, .information, .my-account, .newsletter{
+		width: 100%;
+	}
+
+	.newsletter{
+		grid-column: 1 / -1;
 	}
 
 	.copyright {
@@ -941,16 +957,22 @@ html {
 	}
 
 	.gallery {
-		grid-template-rows: repeat(2, 20rem);
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 15rem);
+		gap: 1rem;
+	}
+	.gallery-img-3{
+		grid-column: 1 / -1;
+		grid-row: 3 / span 1;
 	}
 
 	.blogs {
-		padding: 2rem;
+		padding: 1.5rem;
 	}
 
 	.container-blogs {
 		grid-template-columns: 1fr;
-		height: 75rem;
+		gap: 2rem;
 	}
 
 	.content-blog h3 {
@@ -981,6 +1003,14 @@ html {
 
 	.menu-footer{
 		grid-template-columns: 1fr;
+		gap: 3rem;
+		padding: 0 1.5rem;
+	}
+	.contact-info ul li{
+		text-align: center;
+	}
+	.newsletter{
+		grid-column: auto;
 	}
 
 	.content p{
