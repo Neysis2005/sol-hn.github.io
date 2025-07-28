@@ -1020,7 +1020,7 @@ html {
 		text-align: left;
 	}
 
-	.contact-info, .information, .newsletter {
+	.contact-info, .information, .newsletter .my-account {
 		align-items: flex-start;
 		width: 100%;
 		display: flex;
